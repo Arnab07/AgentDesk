@@ -65,6 +65,10 @@ ELSE s.minBathroom +4
 END
 )
 
+//if min and max are both present for all values, as discussed on email, then sql query can be
+
+Select * from properties p where (p.lat between Lat-0.145 and Lat+0.145) and (p.long between Long-0.182 and Long+0.182) and (p.budget between minBudget and maxBudget) and (p.bedroom between minBedroom and maxBedroom) ) and (p.bedroom between minBedroom and maxBedroom) and (p.bathroom between minBathroom and maxBathroom)
+
 //Since the sql table is indexed, the query will be faster, and fetch only the probable matches
 
 Note: 

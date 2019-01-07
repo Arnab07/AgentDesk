@@ -68,6 +68,7 @@ Note:
 1° degree of latitude = 69miles, therefore 10 miles ≃ 0.145°
 1° degree of longitude = 55miles, therefore 10 miles ≃ 0.182°
 The (p.lat between Lat-0.145 and Lat+0.145) and (p.long between Long-0.182 and Long+0.182) will search within 10*10 square miles area (next step to make a 10 mile circle)
+Req used for gettin min and max: For a property and requirement to be considered a valid match, distance should be within 10 miles, the budget is +/- 25%, bedroom and bathroom should be +/- 2.
 
 2.	Loop through the result of the previous step
 Foreach row in results
